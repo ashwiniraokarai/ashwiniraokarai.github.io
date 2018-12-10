@@ -10,7 +10,7 @@ html{    /*This rule first sets a global base font and font size for the whole p
 	
 font-size: 14px;
 font-family: 'Short Stack';
-font-weight: bold; /*Added later on because the font looked pale on the foreground of the bright green background*/
+font-weight:; /*Added later on because the font looked pale on the foreground of the bright green background*/
 background-color: darkgreen;
 	
 }
