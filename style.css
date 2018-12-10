@@ -1,0 +1,68 @@
+/* E.g.:
+
+p,li,h1{      //element selector: selects all elements with indicated HTML tags (para, list, heading1) and applies the color blue to all of them
+color:blue;     
+}
+
+*/
+
+html{    /*This rule first sets a global base font and font size for the whole page. What do you want your default html to look like?*/
+	
+font-size: 14px;
+font-family: 'Short Stack';
+font-weight: bold; /*Added later on because the font looked pale on the foreground of the bright green background*/
+background-color: darkgreen;
+	
+}
+
+body{
+	background-color: olivedrab;
+	width: 600px; /*to keep the width standardized*/
+	padding: 20px; /*Space between element and its surrounding border, if any*/
+	border: 5px solid black; /*Surround heading with a black border*/
+	margin: 50px auto; /*bring body to center*/
+}
+
+h1{   /*what do you want your h1-s to look like?*/
+	
+	font-size: 60px;
+	font-family:'Short Stack'; 
+	color: darkblue;
+	
+	padding: 0 0; /*Space between element and its surrounding border, if any*/
+	border: 3px solid black; 
+	border-radius: 40px; /*round the border for a softer look*/
+	margin: 20px; /*Adjust default huge gap to something you prefer*/
+	text-align: center; /*Heading looks better when centered*/
+	text-shadow: 3px 3px 5px black; /* Add some shadow effect: horizontal offset, vertical offset, blur effect */
+
+}
+
+img{
+  display: block; /*induce block level behavior to image just like body so you can use the margin property to center the image*/
+  margin: 0 auto; /*center the image*/
+	
+}
+
+p{ /*what do you want your paragraphs and lists to look like?*/
+	
+	font-size:; /*No changes. Just a placeholder. Global font-family should apply*/
+	font-family:; /*No changes. Just a placeholder. Global font-family should apply*/
+	line-height: 2; /*Line spacing*/
+}
+	
+li{ /*what do you want your paragraphs and lists to look like?*/
+	
+	font-size:; /*No changes. Just a placeholder. Global font-family should apply*/
+	font-family:; /*No changes. Just a placeholder. Global font-family should apply*/
+	line-height:; /*Do not want line-spacing to increase for list. Want it to look like a single block*/
+
+}
+
+button{
+	display: block;
+	margin: 0 460px;
+	width: 18%;
+	background-color:black;
+	color: white;
+}

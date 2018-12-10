@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!----------------------------------------------------------------------------------------------
+		----------------------------------------html head Basic---------------------------------------->
+		<meta charset="utf-8">
+		<title>Ash's kitty page</title>
+		
+		
+		<!----------------------------------------------------------------------------------------------
+		------------------------------------Link to Style Sheet and external fonts--------------------->
+		
+		<link href="styles/style.css" rel="stylesheet" type="text/css"> <!--Link to the style sheet created-->
+		
+		<link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
+		<!--Link to google fonts urls noted earlier. It's direct use though would be in (and via) the CSS file -->
+
+		
+	</head>
+	<body>
+		<!----------------------------------------------------------------------------------------------
+		---------------------------------------------Basic--------------------------------------------->
+		<h1>My kitty page</h1>
+		
+		
+			
+		<img src="images/kitty3.jpg" alt="picture of a kitty"> <!--locally downloaded picture of kitty-->
+		
+		<p>Warm welcome to the kitty world! <br>Did you know? Cats can...</p> <!--<br> induces line break-->
+		
+		<ul>
+			<li>be adorable pets</li>
+			<li>make their "hooman" feel needed</li>
+			<li>make you go "awww"</li>
+		</ul>
+		
+		<p>Learn more about petting cats <a href="http://www.animalplanet.com/pets/cats/">here</a></p>
+		
+		
+		<!----------------------------------------------------------------------------------------------
+		--------------------------------------Adding an image-changer---------------------------------->
+		
+		
+	    	<!--Use case: I want a pop-up message to appear when I click anywhere on the web page
+			---------------------------------See Event-Handler in main.js file-------------->
+		
+		 
+
+		<!----------------------------------------------------------------------------------------------
+		--------------------------------Adding a personlized welcome message---------------------------->
+		
+		
+	    	<!--Use case: I want the option to enter my name to the web page when I first navigate to
+			the site so that I can be presented with a personalized welcome message instead of the 
+			page title at the time and everytime thereafter
+			
+			On subsequent logins I also want the option to change my prestored username if I choose to 
+			do so
+			---------------------------------See Event-Handler in main.js file-------------->
+		
+		<!--Creating a button to change username. Placed it on top because it looks weird here-->
+		
+	
+		<button>Change User</button> <!--Introduced later for personalized headig event-handling example-->
+		
+		
+		
+		<!----------------------------------------------------------------------------------------------
+		---------------------------------------------Basic--------------------------------------------->
+		
+		<!--Placing link to .js files at the end of html doc is the best strategy because js has all of the html code up that it can affect.-->
+		<script src="scripts/main.js"></script> 
+		
+	</body>
+</html>
