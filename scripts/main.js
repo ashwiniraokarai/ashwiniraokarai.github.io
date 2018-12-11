@@ -66,8 +66,8 @@ function setUserName(){   //store the username for future use
 	var usersName = prompt('Enter user name');
 	if(usersName != null || usersName != undefined){
 		localStorage.setItem('name',usersName);
-		return usersName;
 	}
+	return usersName;
 }
 
 function getUserName(){  //get previously stored username 
