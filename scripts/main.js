@@ -64,7 +64,7 @@ This is essentially repeating the same code as in the else-portion. Might as wel
 	
 function setUserName(){   //store the username for future use
 	var usersName = prompt('Enter user name');
-	if(usersName != null || usersName != undefined || usersName != ""){ //Store only if the value is not null(cancel)/ undefined(cancel)/ blank (submits blank value and hits ok)
+	if(usersName != null || usersName != undefined || usersName != " "){ //Store only if the value is not null(cancel)/ undefined(cancel)/ blank (submits blank value and hits ok)
 		localStorage.setItem('name',usersName);
 	}
 	return usersName;
@@ -77,7 +77,7 @@ function getUserName(){  //get previously stored username
 
 
 function constructHeading(nameToDisplay){
-	if(nameToDisplay != null || nameToDisplay != undefined || nameToDisplay != ""){
+	if(nameToDisplay != null || nameToDisplay != undefined || nameToDisplay != " "){
 		h1Element.textContent ='Hey, ' +nameToDisplay;
 	}
 	
