@@ -77,7 +77,10 @@ function getUserName(){  //get previously stored username
 
 
 function constructHeading(nameToDisplay){
-	h1Element.textContent ='Hey, ' +nameToDisplay;
+	if(nameToDisplay != null){
+		h1Element.textContent ='Hey, ' +nameToDisplay;
+	}
+	
 }
 
 if(localStorage.getItem('name')){ //user has navigated at least once and set a name in the past
@@ -87,7 +90,7 @@ if(localStorage.getItem('name')){ //user has navigated at least once and set a n
 }else{							  //user navigates for the first time (no stored name)
 	var usersName = setUserName();
 	alert(usersName);
-	constructHeading(usersName);
+	//constructHeading(usersName);
 }
 
 
