@@ -64,7 +64,10 @@ This is essentially repeating the same code as in the else-portion. Might as wel
 	
 function setUserName(){   //store the username for future use
 	var usersName = prompt('Enter user name');
-	if(usersName != null || usersName != undefined || usersName != " "){ //Store only if the value is not null(cancel)/ undefined(cancel)/ blank (submits blank value and hits ok)
+	//if(usersName != null || usersName != undefined || usersName != " "){ 
+	
+	if(usersName){  //Store only if the value is not null(cancel)/ undefined(cancel)/ blank (submits blank value and hits ok)
+		
 		localStorage.setItem('name',usersName);
 	}
 	return usersName;
@@ -90,7 +93,7 @@ if(localStorage.getItem('name')){ //user has navigated at least once and set a n
 	
 }else{							  //user navigates for the first time (no stored name)
 	var usersName = setUserName();
-	alert(usersName);
+	//alert(usersName); //for crude debug only
 	constructHeading(usersName);
 }
 
@@ -98,7 +101,7 @@ if(localStorage.getItem('name')){ //user has navigated at least once and set a n
 var button = document.querySelector('button'); //user elects to change the name
 button.onclick = function(){
 	var usersName = setUserName();  
-	alert(usersName);
+	//alert(usersName); //for crude debug only
 	constructHeading(usersName);
 }
 	
