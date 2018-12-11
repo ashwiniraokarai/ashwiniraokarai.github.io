@@ -41,7 +41,7 @@ h1{   /*what do you want your h1-s to look like?*/
 img{
   display: block; /*induce block level behavior to image just like body so you can use the margin property to center the image*/
   margin: 0 auto; /*center the image*/
-  cursor: pointer;
+  cursor:pointer;
 	
 }
 

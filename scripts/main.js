@@ -34,6 +34,7 @@ Event-handlers are essentially written inside nameless functions
 			//alert(imageAttribSrc); //Checkpoint only
 			alert('Ouch. You just poked poor kitty!');
 			kittyImage.setAttribute('src','images/kitty5.jpg'); //Then force other image to be loaded inside the 'img' element
+			kittyImage.setAttribute('cursor', 'auto');
 		}//Else let the 'src' value to wrap back to the original (leave it be)
 		
 	}
