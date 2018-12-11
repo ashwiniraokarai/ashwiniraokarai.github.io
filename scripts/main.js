@@ -77,8 +77,11 @@ var button = document.querySelector('button');
 button.onclick = function(){
 	
 	var usersName = prompt('Enter user name');
-	localStorage.setItem('name',usersName);
-	h1Element.textContent ='Hey, ' +usersName;
+	if(usersName != null){
+		localStorage.setItem('name',usersName);
+		h1Element.textContent ='Hey, ' +usersName;
+	}
+	
 }
 	
 
