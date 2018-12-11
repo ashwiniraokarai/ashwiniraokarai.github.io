@@ -2,7 +2,7 @@
 //Replace the existing h1 text
 var h1Element = document.querySelector('h1'); //Note: This neither an alert-box nor written to the console. This is actually giving you a reference TO the web page's h1. Sexy!
 
-h1Element.textContent = 'Hello Kitty!'; //Replace the existing h1 text with "Hello World simply by assigning new text to h1
+h1Element.textContent = 'Hey, Hooman!'; //Replace the existing h1 text with "Hey Hooman" simply by assigning new text to h1
 
 
 
@@ -60,28 +60,40 @@ This is essentially repeating the same code as in the else-portion. Might as wel
 
 */
 	
-
-
-
-if(localStorage.getItem('name')){ //user has navigated at least once and set a name in the past
-	var storedName = localStorage.getItem('name');
-   h1Element.textContent = 'Hey, ' +storedName;
-}else{							  //user navigates for the first time (no stored name)
-	var usersName = prompt('Enter user name');
-	localStorage.setItem('name',usersName);
-	h1Element.textContent = 'Hey, ' +usersName;
-}
-
-
-var button = document.querySelector('button');
-button.onclick = function(){
 	
+	
+function setUserName(){   //store the username for future use
 	var usersName = prompt('Enter user name');
 	if(usersName != null){
 		localStorage.setItem('name',usersName);
-		h1Element.textContent ='Hey, ' +usersName;
+		return usersName;
 	}
+}
+
+function getUserName(){  //get previously stored username 
+	var storedName = localStorage.getItem('name');
+    return storedName;
+}
+
+
+function constructHeading(nameToDisplay){
+	h1Element.textContent ='Hey, ' +nameToDisplay;
+}
+
+if(localStorage.getItem('name')){ //user has navigated at least once and set a name in the past
+	var storedName = getUserName('name');
+	constructHeading(storedName);
 	
+}else{							  //user navigates for the first time (no stored name)
+	var usersName = setUserName();
+	constructHeading(usersName);
+}
+
+
+var button = document.querySelector('button'); //user elects to change the name
+button.onclick = function(){
+	var usersName = setUserName();  
+	constructHeading(usersName);
 }
 	
 
