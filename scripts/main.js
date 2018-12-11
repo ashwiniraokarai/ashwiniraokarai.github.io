@@ -64,7 +64,7 @@ This is essentially repeating the same code as in the else-portion. Might as wel
 	
 function setUserName(){   //store the username for future use
 	var usersName = prompt('Enter user name');
-	if(usersName != null){
+	if(usersName != null || usersName != undefined){
 		localStorage.setItem('name',usersName);
 		return usersName;
 	}
