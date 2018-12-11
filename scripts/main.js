@@ -97,6 +97,7 @@ if(localStorage.getItem('name')){ //user has navigated at least once and set a n
 var button = document.querySelector('button'); //user elects to change the name
 button.onclick = function(){
 	var usersName = setUserName();  
+	alert(usersName);
 	constructHeading(usersName);
 }
 	
