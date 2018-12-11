@@ -77,7 +77,7 @@ function getUserName(){  //get previously stored username
 
 
 function constructHeading(nameToDisplay){
-	if(nameToDisplay != null){
+	if(nameToDisplay != null || nameToDisplay != undefined){
 		h1Element.textContent ='Hey, ' +nameToDisplay;
 	}
 	
