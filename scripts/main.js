@@ -91,7 +91,7 @@ if(localStorage.getItem('name')){ //user has navigated at least once and set a n
 }else{							  //user navigates for the first time (no stored name)
 	var usersName = setUserName();
 	alert(usersName);
-	//constructHeading(usersName);
+	constructHeading(usersName);
 }
 
 
