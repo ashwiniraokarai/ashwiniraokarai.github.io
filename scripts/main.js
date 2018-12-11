@@ -79,7 +79,7 @@ function getUserName(){  //get previously stored username
 function constructHeading(nameToDisplay){
 	//if(nameToDisplay != null || nameToDisplay != undefined || nameToDisplay != " "){
 	if(nameToDisplay){
-		h1Element.textContent ='Go, ' +nameToDisplay;
+		h1Element.textContent ='Hey, ' +nameToDisplay;
 	}
 	
 }
